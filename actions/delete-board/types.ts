@@ -3,7 +3,7 @@ import type { Board } from '@prisma/client';
 
 import type { ActionState } from '@/lib/create-safe-action';
 
-import { CreateBoard } from './schema';
+import { DeleteBoard } from './schema';
 
-export type InputType = z.infer<typeof CreateBoard>;
+export type InputType = z.infer<typeof DeleteBoard>;
 export type ReturnType = ActionState<InputType, Board>;

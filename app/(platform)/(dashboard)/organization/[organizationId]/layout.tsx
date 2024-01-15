@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { startCase } from 'lodash';
 import { auth } from '@clerk/nextjs';
 

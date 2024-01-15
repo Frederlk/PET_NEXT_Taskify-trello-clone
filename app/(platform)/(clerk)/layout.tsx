@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 const ClerkLayout = ({ children }: { children: ReactNode }) => {
   return (
