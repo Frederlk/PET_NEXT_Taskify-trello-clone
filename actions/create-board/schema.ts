@@ -6,11 +6,11 @@ export const CreateBoard = z.object({
       required_error: 'Title is required.',
       invalid_type_error: 'Title is required.',
     })
-    .min(3, {
+    .min(2, {
       message: 'Title is too short.',
     }),
   image: z.string({
     required_error: 'Image is required',
     invalid_type_error: 'Image is required',
-  })
+  }),
 });
