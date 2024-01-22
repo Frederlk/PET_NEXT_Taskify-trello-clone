@@ -1,13 +1,15 @@
 'use client';
 
 import { ElementRef, useRef, useState } from 'react';
+import { toast } from 'sonner';
 import type { Board } from '@prisma/client';
+
+import { useAction } from '@/hooks/use-action';
+
+import { updateBoard } from '@/actions/update-board';
 
 import { Button } from '@/components/ui/button';
 import { FormInput } from '@/components/form/form-input';
-import { useAction } from '@/hooks/use-action';
-import { updateBoard } from '@/actions/update-board';
-import { toast } from 'sonner';
 
 interface BoardTitleFormProps {
   data: Board;

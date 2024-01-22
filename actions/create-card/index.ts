@@ -1,15 +1,15 @@
 'use server';
 
-import { ACTION, ENTITY_TYPE } from '@prisma/client';
 import { auth } from '@clerk/nextjs';
 import { revalidatePath } from 'next/cache';
+import { ACTION, ENTITY_TYPE } from '@prisma/client';
 
 import { db } from '@/lib/db';
 import { createSafeAction } from '@/lib/create-safe-action';
 import { createAuditLog } from '@/lib/create-audit-log';
 
 import { CreateCard } from './schema';
-import { InputType, ReturnType } from './types';
+import type { InputType, ReturnType } from './types';
 
 const handler = async (data: InputType): Promise<ReturnType> => {
   const { userId, orgId } = auth();

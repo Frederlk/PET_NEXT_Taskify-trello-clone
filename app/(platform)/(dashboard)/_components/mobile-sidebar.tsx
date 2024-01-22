@@ -2,11 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { Menu } from 'lucide-react';
 
 import { useMobileSidebar } from '@/hooks/use-mobile-sidebar';
+
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
 import { Sheet, SheetContent } from '@/components/ui/sheet';
+
 import { Sidebar } from './sidebar';
 
 export const MobileSidebar = () => {

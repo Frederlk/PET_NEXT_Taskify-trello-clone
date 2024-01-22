@@ -1,7 +1,7 @@
 import { z } from 'zod';
-import { Card } from '@prisma/client';
+import type { Card } from '@prisma/client';
 
-import { ActionState } from '@/lib/create-safe-action';
+import type { ActionState } from '@/lib/create-safe-action';
 
 import { DeleteCard } from './schema';
 

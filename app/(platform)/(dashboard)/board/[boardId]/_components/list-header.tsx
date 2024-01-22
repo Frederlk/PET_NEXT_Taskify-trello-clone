@@ -1,5 +1,5 @@
 import { toast } from 'sonner';
-import { List } from '@prisma/client';
+import type { List } from '@prisma/client';
 import { useEventListener } from 'usehooks-ts';
 import { useState, useRef, ElementRef } from 'react';
 

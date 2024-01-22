@@ -21,3 +21,8 @@ Key Features:
 - MySQL DB
 - Prisma ORM
 - shadcnUI & TailwindCSS
+
+## Test Credit Card
+
+4242 4242 4242 4242
+04/24 242

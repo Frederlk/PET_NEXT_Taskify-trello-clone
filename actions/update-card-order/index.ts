@@ -7,7 +7,7 @@ import { db } from '@/lib/db';
 import { createSafeAction } from '@/lib/create-safe-action';
 
 import { UpdateCardOrder } from './schema';
-import { InputType, ReturnType } from './types';
+import type { InputType, ReturnType } from './types';
 
 const handler = async (data: InputType): Promise<ReturnType> => {
   const { userId, orgId } = auth();

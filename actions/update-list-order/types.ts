@@ -1,7 +1,7 @@
 import { z } from 'zod';
-import { List } from '@prisma/client';
+import type { List } from '@prisma/client';
 
-import { ActionState } from '@/lib/create-safe-action';
+import type { ActionState } from '@/lib/create-safe-action';
 
 import { UpdateListOrder } from './schema';
 
